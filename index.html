@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Number Puzzle Game</title>
+    <link rel="stylesheet" href="index.css">
+    <script src="https://cdn.tailwindcss.com"></script>
+</head>
+<body>
+    <div class="container">
+        <button id="start-btn">Bắt đầu</button>
+        
+        <div class="mid-div">
+            <div class="game-board">
+                <div class="bg-green-100 text-green-500 px-4 py-2 rounded" data-index="1">1</div>
+                <div class="bg-red-100 text-red-500 px-4 py-2 rounded" data-index="2">2</div>
+                <div class="bg-blue-100 text-blue-500 px-4 py-2 rounded" data-index="3">3</div>
+                <div class="bg-purple-100 text-purple-500 px-4 py-2 rounded" data-index="4">4</div>
+                <div class="bg-pink-100 text-pink-500 px-4 py-2 rounded" data-index="5">5</div>
+                <div class="bg-yellow-100 text-yellow-500 px-4 py-2 rounded" data-index="6">6</div>
+                <div class="bg-indigo-100 text-indigo-500 px-4 py-2 rounded" data-index="7">7</div>
+                <div class="bg-gray-100 text-gray-500 px-4 py-2 rounded" data-index="8">8</div>
+                <div class="bg-emerald-100 text-emerald-500 px-4 py-2 rounded" data-index="9">9</div>
+                <div class="bg-amber-100 text-amber-500 px-4 py-2 rounded" data-index="10">10</div>
+                <div class="bg-lime-100 text-lime-500 px-4 py-2 rounded" data-index="11">11</div>
+                <div class="tile empty" data-index="12"></div>
+            </div>
+    
+            <div class="game-info">
+                <div class="timer">
+                    <span>Đồng Hồ</span>
+                    <div class="time">00:00:00</div>
+                </div>
+                
+                <div class="controls">
+                    <p>Hướng Dẫn Di Chuyển</p>
+                    <div class="arrow-keys">
+                        <button class="arrow up">↑</button>
+                        <div class="horizontal-arrows">
+                            <button class="arrow left">←</button>
+                            <button class="arrow down">↓</button>
+                            <button class="arrow right">→</button>
+                        </div>
+                    </div>
+                    <div class="keyboard-controls">
+                        <button class="key-W">W</button>
+                        <div class="horizontal-keys">
+                            <button class="key-A">A</button>
+                            <button class="key-S">S</button>
+                            <button class="key-D">D</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="history">
+            <h3 style="font-weight: bold;">Lịch Sử Lượt Chơi</h3>
+            <table id = "mytable">
+                <thead>
+                    <tr>
+                        <th>#</th>
+                        <th>Bước đi</th>
+                        <th>Thời Gian</th>
+                    </tr>
+                </thead>
+                <tbody>
+
+                </tbody>
+            </table>
+        </div>
+    </div>
+
+    
+    <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+    <script src="index.js"></script>
+</body>
+</html>

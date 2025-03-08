@@ -1,0 +1,154 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    background-color: #f0f0f0;
+}
+
+.container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 20px;
+}
+
+.mid-div {
+    display: flex;
+    align-items: center;
+    gap: 20px;
+}
+
+#start-btn {
+    padding: 10px 20px;
+    font-size: 18px;
+    background-color: #4CAF50;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    margin-top: 10px;
+}
+
+.game-board {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 10px;
+    padding: 20px;
+    background-color: #fff;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0,0,0,0.1);
+    float: left;
+}
+
+.game-board div {
+    width: 100px;
+    height: 100px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 24px;
+    font-weight: bold;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.empty {
+    background-color: #000 !important;
+}
+
+.game-info {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+.timer {
+    text-align: center;
+    padding: 15px;
+    background-color: #b5f4b5;
+    border-radius: 5px;
+    box-shadow: 0 4px 4px rgba(0,0,0,0.2);
+}
+
+.time {
+    font-size: 24px;
+    font-weight: bold;
+    margin-top: 5px;
+}
+.controls {
+    text-align: center;
+    background-color: #e9ede9;
+    box-shadow: 0 4px 4px rgba(0,0,0,0.2);
+    border-radius: 5px;
+}
+
+.controls p {
+    font-size: 16px;
+    margin: 10px;
+    font-weight: bold;
+}
+.arrow-keys {
+    margin-top: 10px;
+}
+
+.arrow-keys button {
+    box-shadow: 0 4px 4px rgba(0,0,0,0.1);
+}
+.arrow {
+    width: 40px;
+    height: 40px;
+    font-size: 20px;
+    margin: 5px;
+    border: none;
+    background-color: #ddd;
+    border-radius: 5px;
+    cursor: pointer;
+}
+.horizontal-arrows {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.horizontal-keys {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.keyboard-controls {
+    margin-top: 10px;
+    text-align: center;
+}
+.keyboard-controls button {
+    width: 40px;
+    height: 40px;
+    font-size: 20px;
+    margin: 5px;
+    border: none;
+    background-color: #ddd;
+    border-radius: 5px;
+    cursor: pointer;
+    box-shadow: 0 4px 4px rgba(0,0,0,0.1);
+}
+
+.history {
+    text-align: center;
+    padding: 15px;
+    width: 100%;
+}
+
+.history table {
+    width: 100%;
+}
+
+.history th, .history td {
+    padding: 10px;
+    border: 1px solid #ddd;
+}
